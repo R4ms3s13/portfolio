@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ramses Medina — Portfolio
 
-## Getting Started
+Portafolio personal construido con Next.js, TypeScript y Framer Motion. Sitio de una sola página, altamente animado, que presenta mi experiencia real como Software Engineer en desarrollo backend y blockchain.
 
-First, run the development server:
+**Live demo:** _pendiente de despliegue_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Características
+
+- **Hero interactivo** con fondo de partículas en canvas que reacciona al cursor, blobs animados y texto con gradiente.
+- **Cursor personalizado** con efecto de arrastre (lerp) sobre elementos interactivos.
+- **Animaciones on-scroll** con Framer Motion (`whileInView`) en cada sección.
+- **Experiencia integrada con proyectos**: cada empleo se muestra junto a los proyectos reales realizados dentro de él, con stack tecnológico y enlaces en vivo.
+- **Skills** con barras de progreso animadas.
+- **Diseño responsive**, glassmorphism y bordes con glow, tema oscuro por defecto.
+- **Contacto directo** vía WhatsApp con mensaje prellenado, email y LinkedIn.
+
+## Stack técnico
+
+| Categoría | Tecnología |
+|---|---|
+| Framework | [Next.js](https://nextjs.org/) 16 (App Router) |
+| Lenguaje | TypeScript |
+| Estilos | Tailwind CSS v4 |
+| Animación | Framer Motion |
+| Iconografía | lucide-react, react-icons |
+| Fuentes | Space Grotesk, Sora (next/font) |
+
+## Estructura del proyecto
+
+```
+src/
+├── app/
+│   ├── layout.tsx      # Metadata, fuentes, overlays globales
+│   ├── page.tsx        # Composición de secciones
+│   └── globals.css     # Tema, gradientes, animaciones CSS
+├── components/
+│   ├── Hero.tsx         # Sección de bienvenida
+│   ├── ParticleField.tsx# Fondo de partículas en canvas
+│   ├── CustomCursor.tsx # Cursor personalizado
+│   ├── Navbar.tsx        # Navegación fija
+│   ├── TechMarquee.tsx   # Marquee infinito de tecnologías
+│   ├── About.tsx         # Perfil y stack por categoría
+│   ├── Experience.tsx    # Experiencia laboral + proyectos anidados
+│   ├── Skills.tsx        # Barras de habilidades y aptitudes
+│   ├── Education.tsx     # Formación académica, cursos e idiomas
+│   ├── Contact.tsx       # WhatsApp, email, LinkedIn, GitHub
+│   ├── Reveal.tsx         # Wrapper de animación al hacer scroll
+│   └── SectionHeading.tsx # Encabezado reutilizable por sección
+└── lib/
+    └── data.ts          # Fuente única de verdad: perfil, experiencia, skills
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Todo el contenido (perfil, experiencia, skills, educación) vive en `src/lib/data.ts`, así que actualizar el CV del sitio es cuestión de editar un solo archivo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Desarrollo local
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+```
 
-## Learn More
+Abre [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+## Build de producción
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Licencia
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Uso personal — código disponible como referencia.
