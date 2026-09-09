@@ -44,27 +44,20 @@ export default function Experience() {
                       key={project.name}
                       className="rounded-xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-fuchsia-400/30"
                     >
-                      <div className="mb-2 flex items-center justify-between gap-2">
-                        <div className="flex items-center gap-2 text-white">
-                          <Layers size={15} className="text-fuchsia-300" />
-                          <h4 className="font-display font-semibold">{project.name}</h4>
-                        </div>
-                        {"link" in project && project.link && (
-                          <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noreferrer"
-                            data-hover
-                            className="shrink-0 text-white/40 transition hover:text-fuchsia-300"
-                            aria-label={`Ver ${project.name}`}
-                          >
-                            <ExternalLink size={15} />
-                          </a>
-                        )}
+                      <div className="mb-2 flex items-center gap-2 text-white">
+                        <Layers size={15} className="text-fuchsia-300" />
+                        <h4 className="font-display font-semibold">{project.name}</h4>
                       </div>
-                      <p className="text-sm leading-relaxed text-white/60">
-                        {project.description}
-                      </p>
+                      <ul className="space-y-1.5">
+                        {project.description.map((bullet, idx) => (
+                          <li
+                            key={idx}
+                            className="pl-3 text-sm leading-relaxed text-white/60 relative before:absolute before:left-0 before:top-2 before:h-1 before:w-1 before:rounded-full before:bg-fuchsia-400/60"
+                          >
+                            {bullet}
+                          </li>
+                        ))}
+                      </ul>
                       <div className="mt-4 flex flex-wrap gap-2">
                         {project.stack.map((tech) => (
                           <span
@@ -75,6 +68,18 @@ export default function Experience() {
                           </span>
                         ))}
                       </div>
+                      {"link" in project && project.link && (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          data-hover
+                          className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-3 py-1.5 text-xs font-medium text-fuchsia-300 transition hover:border-fuchsia-400/60 hover:bg-fuchsia-500/20"
+                        >
+                          Ver proyecto
+                          <ExternalLink size={13} />
+                        </a>
+                      )}
                     </div>
                   ))}
                 </div>

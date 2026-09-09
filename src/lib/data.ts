@@ -70,15 +70,26 @@ export const experience = [
     projects: [
       {
         name: "Domoblock",
-        description:
-          "Plataforma fintech de inversión inmobiliaria tokenizada. Diseñé y agregué nuevas pantallas, experiencias y funcionalidades al frontend en Angular, además de corregir bugs, junto con microservicios NestJS (auth, KYC, pagos, inversiones, blockchain, notificaciones) en arquitectura hexagonal/DDD comunicados vía RabbitMQ, dentro de un monorepo Nx. Integré la pasarela de pagos eWallet de MangoPay e implementé minteo de tokens on-chain en Polygon. Desplegado en Google Cloud Run con PostgreSQL y Firebase.",
+        description: [
+          "Diseñé, desarrollé y desplegué microservicios NestJS (auth, KYC, pagos, inversiones, blockchain, notificaciones) en arquitectura hexagonal/DDD comunicados vía RabbitMQ, dentro de un monorepo Nx.",
+          "Automaticé el proceso de compra de punta a punta: integré la pasarela eWallet de MangoPay y automaticé retiros, compra de tokens y recargas.",
+          "Lideré un equipo de desarrollo en la construcción de los microservicios.",
+          "Implementé minteo de tokens on-chain en Polygon, y diseñé y agregué nuevas pantallas y funcionalidades al frontend en Angular.",
+          "Desplegado en Google Cloud Run con PostgreSQL y Firebase.",
+        ],
         stack: ["Angular", "NestJS", "RabbitMQ", "PostgreSQL", "Firebase", "MangoPay", "Polygon", "Google Cloud Run", "Docker"],
         link: "https://app.domoblock.io/",
       },
       {
         name: "Notrack",
-        description:
-          "Plataforma segura de tracking y colaboración de archivos. Diseñé y agregué nuevas pantallas, experiencias y funcionalidades al frontend en Next.js/React, además de corregir bugs, sobre un backend principal en Fastify + MongoDB con auth basada en wallet verificada on-chain contra un smart contract de control de acceso en BSC que diseñé, desarrollé y desplegué con Hardhat y Remix IDE. Cifrado AWS KMS, almacenamiento S3, edición/preview de documentos con OnlyOffice y eventos en tiempo real con Socket.io; un servicio NestJS maneja admin/chat/auth. Corre en AWS EC2 detrás de Nginx.",
+        description: [
+          "Diseñé, desarrollé y desplegué el backend principal (Fastify + MongoDB), incluyendo un sistema de gestión de archivos con historial de versiones.",
+          "Diseñé, desarrollé y desplegué el smart contract de control de acceso en BSC (Hardhat, Remix IDE) usado para autenticación basada en wallet verificada on-chain.",
+          "Implementé cifrado con AWS KMS, almacenamiento en S3, edición/preview de documentos con OnlyOffice y eventos en tiempo real con Socket.io; un servicio NestJS maneja admin/chat/auth.",
+          "Diseñé y agregué nuevas pantallas y funcionalidades al frontend en Next.js/React.",
+          "Corre en AWS EC2 detrás de Nginx.",
+          "Sometí la plataforma a una auditoría de seguridad (ethical hacking) de DragonJar S.A.S.: de 19 vulnerabilidades identificadas (ninguna crítica), resolví 18.",
+        ],
         stack: [
           "Next.js",
           "React",
@@ -100,13 +111,20 @@ export const experience = [
       },
       {
         name: "LVLX & Dgallery",
-        description:
-          "Plataformas NFT en BNB Smart Chain. Construí contratos ERC-1155 con sistema de referidos y staking (LVLX), y un marketplace NFT upgradeable (UUPS) con distribución de dividendos on-chain (Dgallery), desplegados y verificados con Hardhat.",
+        description: [
+          "Diseñé, desarrollé y desplegué contratos ERC-1155 con sistema de referidos y staking (LVLX) para la gestión descentralizada de las finanzas de los usuarios.",
+          "Diseñé, desarrollé y desplegué un marketplace NFT upgradeable (UUPS) con distribución de dividendos on-chain (Dgallery).",
+          "Ambos verificados en BNB Smart Chain con Hardhat.",
+        ],
         stack: ["Solidity", "ERC-1155", "Hardhat", "OpenZeppelin", "BNB Smart Chain"],
       },
       {
         name: "Sitio corporativo MiT Software",
-        description: "Construí y mantuve un backend headless CMS con Strapi, contenerizado con Docker.",
+        description: [
+          "Diseñé, desarrollé y mantuve el backend headless CMS con Strapi, contenerizado con Docker.",
+          "Automaticé la publicación de contenido: un webhook desde Strapi redespliega y regenera el sitio (SSG) cada vez que se crea o edita contenido.",
+          "Aproveché la generación bilingüe automática (ES/EN) de Strapi para servir contenido localizado al frontend.",
+        ],
         stack: ["Strapi", "Node.js", "Docker"],
         link: "https://mitsoftware.com",
       },
@@ -121,15 +139,20 @@ export const experience = [
     projects: [
       {
         name: "WeGo",
-        description:
-          "Backend de app de movilidad (Jul 2024 - Ene 2025). Construí Cloud Functions de Firebase (TypeScript) manejando notificaciones push y mensajería transaccional vía Twilio y SendGrid sobre Firestore.",
+        description: [
+          "Backend de app de movilidad (Jul 2024 - Ene 2025). Construí Cloud Functions de Firebase (TypeScript) con código limpio y escalable, pensado para soportar un alto volumen de usuarios.",
+          "Implementé notificaciones push y mensajería transaccional vía Twilio y SendGrid sobre Firestore.",
+        ],
         stack: ["Firebase", "Cloud Functions", "TypeScript", "Firestore", "Twilio", "SendGrid"],
         link: "https://eventswego.com",
       },
       {
         name: "Axinfy (antes Defily)",
-        description:
-          "Protocolo DeFi en Polygon (Dic 2024 - Ene 2026). Desarrollé y actualicé smart contracts en Solidity para staking, tesorería, cuentas de membresía/NFT y vaults de liquidez con proxies upgradeables UUPS (OpenZeppelin), con tooling automatizado de deploy/verificación en Hardhat. Diseñé y agregué nuevas pantallas y funcionalidades al frontend de la dapp en Next.js/React (conexión de wallet, gestión de vaults), además de corregir bugs, más un microservicio Express/MongoDB que fija metadata de NFTs a IPFS vía Pinata.",
+        description: [
+          "Protocolo DeFi en Polygon (Dic 2024 - Ene 2026). Diseñé, desarrollé y desplegué smart contracts que gestionan de forma descentralizada las finanzas de los usuarios: staking, tesorería, cuentas de membresía/NFT y vaults de liquidez, con proxies upgradeables UUPS (OpenZeppelin) y tooling automatizado de deploy/verificación en Hardhat.",
+          "Desarrollé un microservicio en Express/MongoDB que automatiza la generación de NFTs únicos y los publica en IPFS vía Pinata.",
+          "Diseñé y agregué nuevas pantallas y funcionalidades al frontend de la dapp en Next.js/React (conexión de wallet, gestión de vaults).",
+        ],
         stack: ["Next.js", "React", "Solidity", "Hardhat", "OpenZeppelin", "Polygon", "Express", "MongoDB", "IPFS/Pinata"],
         link: "https://av11.axinfy.com",
       },

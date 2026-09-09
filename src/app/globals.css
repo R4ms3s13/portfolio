@@ -82,6 +82,7 @@ body {
 .glow-border::before {
   content: "";
   position: absolute;
+  pointer-events: none;
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
