@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Phone } from "lucide-react";
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import ParticleField from "./ParticleField";
-import { profile } from "@/lib/data";
+import type { Dictionary } from "@/lib/dictionaries";
 
 const container = {
   hidden: {},
@@ -22,7 +22,10 @@ const item = {
   },
 };
 
-export default function Hero() {
+export default function Hero({ dict }: { dict: Dictionary }) {
+  const { profile } = dict;
+  const t = dict.ui.hero;
+
   return (
     <section
       id="top"
@@ -44,14 +47,14 @@ export default function Hero() {
           className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-fuchsia-300"
         >
           <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-          Disponible para nuevos proyectos
+          {t.availableBadge}
         </motion.p>
 
         <motion.h1
           variants={item}
           className="font-display text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl"
         >
-          Hola, soy{" "}
+          {t.greeting}{" "}
           <span className="gradient-text block sm:inline">{profile.shortName}</span>
         </motion.h1>
 
@@ -75,7 +78,7 @@ export default function Hero() {
             data-hover
             className="glow-border group relative overflow-hidden rounded-full bg-white px-7 py-3 text-sm font-bold text-black transition-transform hover:-translate-y-0.5"
           >
-            Ver experiencia
+            {t.viewExperience}
           </a>
           <a
             href={profile.whatsapp}
@@ -84,7 +87,7 @@ export default function Hero() {
             data-hover
             className="flex items-center gap-2 rounded-full border border-white/15 px-7 py-3 text-sm font-semibold text-white/90 transition hover:border-emerald-400/60 hover:text-emerald-300"
           >
-            <FaWhatsapp size={16} /> Escríbeme por WhatsApp
+            <FaWhatsapp size={16} /> {t.whatsappCta}
           </a>
         </motion.div>
 

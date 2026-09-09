@@ -1,18 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import type { Dictionary } from "@/lib/dictionaries";
+import type { Locale } from "@/lib/i18n";
 
-const links = [
-  { href: "#about", label: "Perfil" },
-  { href: "#experience", label: "Experiencia" },
-  { href: "#skills", label: "Skills" },
-  { href: "#education", label: "Formación" },
-  { href: "#contact", label: "Contacto" },
-];
-
-export default function Navbar() {
+export default function Navbar({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   const [scrolled, setScrolled] = useState(false);
+  const otherLang: Locale = lang === "es" ? "en" : "es";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -38,7 +34,7 @@ export default function Navbar() {
           RM<span className="text-fuchsia-400">.</span>dev
         </a>
         <ul className="hidden gap-8 text-sm font-medium text-white/70 md:flex">
-          {links.map((link) => (
+          {dict.ui.navbar.links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
@@ -50,13 +46,22 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <a
-          href="#contact"
-          data-hover
-          className="glow-border rounded-full bg-white/5 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
-        >
-          Contáctame
-        </a>
+        <div className="flex items-center gap-4">
+          <Link
+            href={`/${otherLang}`}
+            data-hover
+            className="rounded-full border border-white/15 px-3 py-1.5 text-xs font-semibold uppercase tracking-widest text-white/70 transition hover:border-fuchsia-400/60 hover:text-fuchsia-300"
+          >
+            {otherLang}
+          </Link>
+          <a
+            href="#contact"
+            data-hover
+            className="glow-border rounded-full bg-white/5 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            {dict.ui.navbar.contactCta}
+          </a>
+        </div>
       </nav>
     </motion.header>
   );

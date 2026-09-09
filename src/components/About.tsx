@@ -1,12 +1,14 @@
-import { profile, techGroups } from "@/lib/data";
+import type { Dictionary } from "@/lib/dictionaries";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
-export default function About() {
+export default function About({ dict }: { dict: Dictionary }) {
+  const { profile, techGroups } = dict;
+
   return (
     <section id="about" className="relative py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading kicker="Perfil profesional" title="Quién soy" />
+        <SectionHeading kicker={dict.ui.about.kicker} title={dict.ui.about.title} />
 
         <Reveal delay={0.1} className="mt-8 max-w-3xl">
           <p className="text-lg leading-relaxed text-white/70">{profile.summary}</p>

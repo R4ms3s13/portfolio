@@ -1,13 +1,15 @@
-import { experience } from "@/lib/data";
+import type { Dictionary } from "@/lib/dictionaries";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 import { Briefcase, ExternalLink, Layers } from "lucide-react";
 
-export default function Experience() {
+export default function Experience({ dict }: { dict: Dictionary }) {
+  const { experience } = dict;
+
   return (
     <section id="experience" className="relative py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading kicker="Trayectoria" title="Experiencia & proyectos" />
+        <SectionHeading kicker={dict.ui.experience.kicker} title={dict.ui.experience.title} />
 
         <div className="mt-16 space-y-14">
           {experience.map((job, i) => (
@@ -76,7 +78,7 @@ export default function Experience() {
                           data-hover
                           className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-3 py-1.5 text-xs font-medium text-fuchsia-300 transition hover:border-fuchsia-400/60 hover:bg-fuchsia-500/20"
                         >
-                          Ver proyecto
+                          {dict.ui.experience.viewProject}
                           <ExternalLink size={13} />
                         </a>
                       )}

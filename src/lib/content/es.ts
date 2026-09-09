@@ -48,17 +48,6 @@ export const techGroups = [
   },
 ];
 
-export const coreTech = [
-  "Node.js",
-  "NestJS",
-  "Solidity",
-  "MongoDB",
-  "PostgreSQL",
-  "Docker",
-  "AWS",
-  "RabbitMQ",
-];
-
 export const experience = [
   {
     role: "Software Engineer",

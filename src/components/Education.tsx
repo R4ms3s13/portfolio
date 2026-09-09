@@ -1,20 +1,23 @@
-import { courses, education, languages } from "@/lib/data";
+import type { Dictionary } from "@/lib/dictionaries";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 import { GraduationCap, Languages as LanguagesIcon, BookOpen } from "lucide-react";
 
-export default function Education() {
+export default function Education({ dict }: { dict: Dictionary }) {
+  const { courses, education, languages } = dict;
+  const t = dict.ui.education;
+
   return (
     <section id="education" className="relative py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading kicker="Formación" title="Educación & idiomas" />
+        <SectionHeading kicker={t.kicker} title={t.title} />
 
         <div className="mt-14 grid gap-8 md:grid-cols-3">
           <Reveal delay={0}>
             <div className="glass glow-border h-full rounded-2xl p-8">
               <GraduationCap className="mb-4 text-fuchsia-400" size={28} />
               <h3 className="mb-1 text-sm font-semibold uppercase tracking-widest text-white/40">
-                Formación académica
+                {t.academicHeading}
               </h3>
               {education.map((edu) => (
                 <div key={edu.title} className="mt-4">
@@ -31,7 +34,7 @@ export default function Education() {
             <div className="glass glow-border h-full rounded-2xl p-8">
               <BookOpen className="mb-4 text-fuchsia-400" size={28} />
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-white/40">
-                Cursos
+                {t.coursesHeading}
               </h3>
               <ul className="space-y-4">
                 {courses.map((course) => (
@@ -48,7 +51,7 @@ export default function Education() {
             <div className="glass glow-border h-full rounded-2xl p-8">
               <LanguagesIcon className="mb-4 text-fuchsia-400" size={28} />
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-white/40">
-                Idiomas
+                {t.languagesHeading}
               </h3>
               <ul className="space-y-3">
                 {languages.map((lang) => (

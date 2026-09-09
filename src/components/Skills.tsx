@@ -1,15 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { skills, aptitudes } from "@/lib/data";
+import type { Dictionary } from "@/lib/dictionaries";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
-export default function Skills() {
+export default function Skills({ dict }: { dict: Dictionary }) {
+  const { skills, aptitudes } = dict;
+
   return (
     <section id="skills" className="relative py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading kicker="Habilidades" title="Skills técnicas" />
+        <SectionHeading kicker={dict.ui.skills.kicker} title={dict.ui.skills.title} />
 
         <div className="mt-14 grid gap-14 lg:grid-cols-5">
           <div className="lg:col-span-3">
@@ -39,7 +41,7 @@ export default function Skills() {
           <Reveal delay={0.2} className="lg:col-span-2">
             <div className="glass glow-border h-full rounded-2xl p-8">
               <h3 className="mb-6 text-sm font-semibold uppercase tracking-widest text-white/40">
-                Aptitudes
+                {dict.ui.skills.aptitudesHeading}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {aptitudes.map((apt) => (
