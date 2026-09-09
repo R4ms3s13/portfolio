@@ -142,7 +142,7 @@ export const experience = [
           "Protocolo DeFi en Polygon (Dic 2024 - Ene 2026). Diseñé, desarrollé y desplegué smart contracts que gestionan de forma descentralizada las finanzas de los usuarios: staking, tesorería, cuentas de membresía/NFT y vaults de liquidez, con proxies upgradeables UUPS (OpenZeppelin) y tooling automatizado de deploy/verificación en Hardhat.",
           "Desarrollé un microservicio en Express/MongoDB que automatiza la generación de NFTs únicos y los publica en IPFS vía Pinata.",
           "Diseñé y agregué nuevas pantallas y funcionalidades al frontend de la dapp en Next.js/React (conexión de wallet, gestión de vaults).",
-          "Los contratos llegaron a operar más de 20.000 USDC, y la plataforma superó los 1.000 NFTs generados y comprados por usuarios.",
+          "El protocolo alcanzó un TVL de ~$219.065 USDC como Defily, y ronda los ~$106.500 USDC en su relanzamiento como Axinfy; la plataforma superó los 1.000 NFTs generados y comprados por usuarios.",
         ],
         stack: ["Next.js", "React", "Solidity", "Hardhat", "OpenZeppelin", "Polygon", "Express", "MongoDB", "IPFS/Pinata"],
         link: "https://av11.axinfy.com",
