@@ -60,7 +60,7 @@ export const experience = [
       {
         name: "Domoblock",
         description: [
-          "Designed, developed, and deployed NestJS microservices (auth, KYC, payments, investments, blockchain, notifications) in a hexagonal/DDD architecture communicating over RabbitMQ, within an Nx monorepo.",
+          "Designed and developed the entire Domoblock backend: NestJS microservices (auth, KYC, payments, investments, blockchain, notifications) in a hexagonal/DDD architecture communicating over RabbitMQ, within an Nx monorepo.",
           "Automated the end-to-end purchase flow: integrated the MangoPay eWallet payment gateway and automated withdrawals, token purchases, and top-ups.",
           "Led a development team building the microservices.",
           "Implemented on-chain token minting on Polygon, and designed and added new screens and features to the Angular frontend.",
@@ -72,7 +72,7 @@ export const experience = [
       {
         name: "Notrack",
         description: [
-          "Designed, developed, and deployed the core backend (Fastify + MongoDB), including a file management system with version history.",
+          "Designed and developed the entire Notrack backend (Fastify + MongoDB), including a file management system with version history.",
           "Designed, developed, and deployed the Solidity access-control smart contract (Hardhat, Remix IDE) used for on-chain wallet-based authentication.",
           "Implemented AWS KMS encryption, S3 file storage, OnlyOffice document editing/preview, and Socket.io real-time events; a NestJS service handles admin/chat/auth.",
           "Designed and added new screens and features to the Next.js/React frontend.",
@@ -129,7 +129,7 @@ export const experience = [
       {
         name: "WeGo",
         description: [
-          "Mobility app backend (Jul 2024 - Jan 2025). Built Firebase Cloud Functions (TypeScript) with clean, scalable code designed to support a high volume of users.",
+          "Mobility app backend (Jul 2024 - Jan 2025). Designed and developed the backend's business logic in Firebase Cloud Functions (TypeScript), with clean, scalable code designed to support a high volume of users.",
           "Implemented push notifications and transactional messaging via Twilio and SendGrid on top of Firestore.",
         ],
         stack: ["Firebase", "Cloud Functions", "TypeScript", "Firestore", "Twilio", "SendGrid"],
