@@ -42,6 +42,10 @@ export const techGroups = [
     category: "Tools",
     items: ["Jira", "Notion", "Slack"],
   },
+  {
+    category: "QA",
+    items: ["Postman", "Jest"],
+  },
 ];
 
 export const coreTech = [

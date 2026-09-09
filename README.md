@@ -13,6 +13,7 @@ Portafolio personal construido con Next.js, TypeScript y Framer Motion. Sitio de
 - **Skills** con barras de progreso animadas.
 - **Diseño responsive**, glassmorphism y bordes con glow, tema oscuro por defecto.
 - **Contacto directo** vía WhatsApp con mensaje prellenado, email y LinkedIn.
+- **Stack por categoría** en la sección "Sobre mí", incluyendo herramientas de QA (Postman, Jest).
 
 ## Stack técnico
 
