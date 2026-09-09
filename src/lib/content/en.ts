@@ -102,9 +102,9 @@ export const experience = [
       {
         name: "LVLX & Dgallery",
         description: [
-          "Designed, developed, and deployed ERC-1155 NFT contracts with a referral and staking system (LVLX) for decentralized management of user finances.",
-          "Designed, developed, and deployed a UUPS-upgradeable NFT marketplace with on-chain dividends distribution (Dgallery).",
-          "Both verified on BNB Smart Chain with Hardhat.",
+          "Collaborated within a development team on the design and development of ERC-1155 NFT contracts with a referral and staking system (LVLX) for decentralized management of user finances.",
+          "Collaborated on the design and development of a UUPS-upgradeable NFT marketplace with on-chain dividends distribution (Dgallery).",
+          "Both deployed and verified on BNB Smart Chain with Hardhat.",
         ],
         stack: ["Solidity", "ERC-1155", "Hardhat", "OpenZeppelin", "BNB Smart Chain"],
       },
