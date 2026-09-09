@@ -62,9 +62,10 @@ export const experience = [
         description: [
           "Designed and developed the entire Domoblock backend: NestJS microservices (auth, KYC, payments, investments, blockchain, notifications) in a hexagonal/DDD architecture communicating over RabbitMQ, within an Nx monorepo.",
           "Automated the end-to-end purchase flow: integrated the MangoPay eWallet payment gateway and automated withdrawals, token purchases, and top-ups.",
-          "Led a development team building the microservices.",
+          "Led a development team of 4 building the microservices.",
           "Implemented on-chain token minting on Polygon, and designed and added new screens and features to the Angular frontend.",
           "Deployed on Google Cloud Run with PostgreSQL and Firebase.",
+          "The platform has accumulated over €58 million invested by users across its projects to date, several already distributing dividends.",
         ],
         stack: ["Angular", "NestJS", "RabbitMQ", "PostgreSQL", "Firebase", "MangoPay", "Polygon", "Google Cloud Run", "Docker"],
         link: "https://app.domoblock.io/",
@@ -110,11 +111,11 @@ export const experience = [
       {
         name: "MiT Software corporate website",
         description: [
-          "Designed, developed, and maintained the Strapi headless CMS backend, containerized with Docker.",
+          "Modernized the site, migrating it from WordPress to a headless stack: a static Astro frontend and a Strapi CMS backend, containerized with Docker.",
           "Automated content publishing: a Strapi webhook redeploys and regenerates the site (SSG) on every content change.",
           "Leveraged Strapi's automatic bilingual (ES/EN) content generation to serve localized content to the frontend.",
         ],
-        stack: ["Strapi", "Node.js", "Docker"],
+        stack: ["Astro", "Strapi", "Node.js", "Docker"],
         link: "https://mitsoftware.com",
       },
     ],
@@ -141,6 +142,7 @@ export const experience = [
           "DeFi protocol on Polygon (Dec 2024 - Jan 2026). Designed, developed, and deployed smart contracts that decentrally manage user finances: staking, treasury management, membership/NFT accounts, and liquidity vaults, using UUPS upgradeable proxies (OpenZeppelin) and automated deployment/verification tooling built on Hardhat.",
           "Developed a standalone Express/MongoDB microservice that automates unique NFT generation and pins assets to IPFS via Pinata.",
           "Designed and added new screens and features to the Next.js/React dapp frontend (wallet connection, vault management).",
+          "The contracts went on to operate over 20,000 USDC, and the platform surpassed 1,000 NFTs generated and purchased by users.",
         ],
         stack: ["Next.js", "React", "Solidity", "Hardhat", "OpenZeppelin", "Polygon", "Express", "MongoDB", "IPFS/Pinata"],
         link: "https://av11.axinfy.com",

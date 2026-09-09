@@ -62,9 +62,10 @@ export const experience = [
         description: [
           "Diseñé y desarrollé la totalidad del backend de Domoblock: microservicios NestJS (auth, KYC, pagos, inversiones, blockchain, notificaciones) en arquitectura hexagonal/DDD comunicados vía RabbitMQ, dentro de un monorepo Nx.",
           "Automaticé el proceso de compra de punta a punta: integré la pasarela eWallet de MangoPay y automaticé retiros, compra de tokens y recargas.",
-          "Lideré un equipo de desarrollo en la construcción de los microservicios.",
+          "Lideré un equipo de 4 desarrolladores en la construcción de los microservicios.",
           "Implementé minteo de tokens on-chain en Polygon, y diseñé y agregué nuevas pantallas y funcionalidades al frontend en Angular.",
           "Desplegado en Google Cloud Run con PostgreSQL y Firebase.",
+          "La plataforma acumula a la fecha más de €58 millones invertidos por usuarios en sus proyectos, varios ya con dividendos distribuidos.",
         ],
         stack: ["Angular", "NestJS", "RabbitMQ", "PostgreSQL", "Firebase", "MangoPay", "Polygon", "Google Cloud Run", "Docker"],
         link: "https://app.domoblock.io/",
@@ -110,11 +111,11 @@ export const experience = [
       {
         name: "Sitio corporativo MiT Software",
         description: [
-          "Diseñé, desarrollé y mantuve el backend headless CMS con Strapi, contenerizado con Docker.",
+          "Modernicé el sitio, migrándolo de WordPress a un stack headless: frontend estático con Astro y backend CMS con Strapi, contenerizado con Docker.",
           "Automaticé la publicación de contenido: un webhook desde Strapi redespliega y regenera el sitio (SSG) cada vez que se crea o edita contenido.",
           "Aproveché la generación bilingüe automática (ES/EN) de Strapi para servir contenido localizado al frontend.",
         ],
-        stack: ["Strapi", "Node.js", "Docker"],
+        stack: ["Astro", "Strapi", "Node.js", "Docker"],
         link: "https://mitsoftware.com",
       },
     ],
@@ -141,6 +142,7 @@ export const experience = [
           "Protocolo DeFi en Polygon (Dic 2024 - Ene 2026). Diseñé, desarrollé y desplegué smart contracts que gestionan de forma descentralizada las finanzas de los usuarios: staking, tesorería, cuentas de membresía/NFT y vaults de liquidez, con proxies upgradeables UUPS (OpenZeppelin) y tooling automatizado de deploy/verificación en Hardhat.",
           "Desarrollé un microservicio en Express/MongoDB que automatiza la generación de NFTs únicos y los publica en IPFS vía Pinata.",
           "Diseñé y agregué nuevas pantallas y funcionalidades al frontend de la dapp en Next.js/React (conexión de wallet, gestión de vaults).",
+          "Los contratos llegaron a operar más de 20.000 USDC, y la plataforma superó los 1.000 NFTs generados y comprados por usuarios.",
         ],
         stack: ["Next.js", "React", "Solidity", "Hardhat", "OpenZeppelin", "Polygon", "Express", "MongoDB", "IPFS/Pinata"],
         link: "https://av11.axinfy.com",
