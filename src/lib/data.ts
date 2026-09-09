@@ -116,7 +116,7 @@ export const experience = [
     role: "Software Engineer (Freelance)",
     company: "Independiente / Remoto",
     location: "Remoto",
-    period: "Jul 2024 - Ene 2026",
+    period: "Jul 2024 - Ene 2026 (paralelo a MiT Software)",
     summary: "",
     projects: [
       {
