@@ -71,14 +71,14 @@ export const experience = [
       {
         name: "Domoblock",
         description:
-          "Plataforma fintech de inversión inmobiliaria tokenizada. Contribuí al frontend en Angular (nuevas pantallas, corrección de bugs) junto con microservicios NestJS (auth, KYC, pagos, inversiones, blockchain, notificaciones) en arquitectura hexagonal/DDD comunicados vía RabbitMQ, dentro de un monorepo Nx. Integré la pasarela de pagos eWallet de MangoPay e implementé minteo de tokens on-chain en Polygon. Desplegado en Google Cloud Run con PostgreSQL y Firebase.",
+          "Plataforma fintech de inversión inmobiliaria tokenizada. Diseñé y agregué nuevas pantallas, experiencias y funcionalidades al frontend en Angular, además de corregir bugs, junto con microservicios NestJS (auth, KYC, pagos, inversiones, blockchain, notificaciones) en arquitectura hexagonal/DDD comunicados vía RabbitMQ, dentro de un monorepo Nx. Integré la pasarela de pagos eWallet de MangoPay e implementé minteo de tokens on-chain en Polygon. Desplegado en Google Cloud Run con PostgreSQL y Firebase.",
         stack: ["Angular", "NestJS", "RabbitMQ", "PostgreSQL", "Firebase", "MangoPay", "Polygon", "Google Cloud Run", "Docker"],
         link: "https://app.domoblock.io/",
       },
       {
         name: "Notrack",
         description:
-          "Plataforma segura de tracking y colaboración de archivos. Contribuí al frontend en Next.js/React (nuevas pantallas, corrección de bugs) sobre un backend principal en Fastify + MongoDB con auth basada en wallet verificada on-chain contra un smart contract de control de acceso en BSC que diseñé, desarrollé y desplegué con Hardhat y Remix IDE. Cifrado AWS KMS, almacenamiento S3, edición/preview de documentos con OnlyOffice y eventos en tiempo real con Socket.io; un servicio NestJS maneja admin/chat/auth. Corre en AWS EC2 detrás de Nginx.",
+          "Plataforma segura de tracking y colaboración de archivos. Diseñé y agregué nuevas pantallas, experiencias y funcionalidades al frontend en Next.js/React, además de corregir bugs, sobre un backend principal en Fastify + MongoDB con auth basada en wallet verificada on-chain contra un smart contract de control de acceso en BSC que diseñé, desarrollé y desplegué con Hardhat y Remix IDE. Cifrado AWS KMS, almacenamiento S3, edición/preview de documentos con OnlyOffice y eventos en tiempo real con Socket.io; un servicio NestJS maneja admin/chat/auth. Corre en AWS EC2 detrás de Nginx.",
         stack: [
           "Next.js",
           "React",
@@ -129,7 +129,7 @@ export const experience = [
       {
         name: "Axinfy (antes Defily)",
         description:
-          "Protocolo DeFi en Polygon (Dic 2024 - Ene 2026). Desarrollé y actualicé smart contracts en Solidity para staking, tesorería, cuentas de membresía/NFT y vaults de liquidez con proxies upgradeables UUPS (OpenZeppelin), con tooling automatizado de deploy/verificación en Hardhat. Contribuí al frontend de la dapp en Next.js/React (conexión de wallet, gestión de vaults, corrección de bugs), más un microservicio Express/MongoDB que fija metadata de NFTs a IPFS vía Pinata.",
+          "Protocolo DeFi en Polygon (Dic 2024 - Ene 2026). Desarrollé y actualicé smart contracts en Solidity para staking, tesorería, cuentas de membresía/NFT y vaults de liquidez con proxies upgradeables UUPS (OpenZeppelin), con tooling automatizado de deploy/verificación en Hardhat. Diseñé y agregué nuevas pantallas y funcionalidades al frontend de la dapp en Next.js/React (conexión de wallet, gestión de vaults), además de corregir bugs, más un microservicio Express/MongoDB que fija metadata de NFTs a IPFS vía Pinata.",
         stack: ["Next.js", "React", "Solidity", "Hardhat", "OpenZeppelin", "Polygon", "Express", "MongoDB", "IPFS/Pinata"],
         link: "https://av11.axinfy.com",
       },
