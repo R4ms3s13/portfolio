@@ -76,7 +76,7 @@ export const experience = [
           "Diseñé y desarrollé la totalidad del backend de Notrack (Fastify + MongoDB), incluyendo un sistema de gestión de archivos con historial de versiones.",
           "Diseñé, desarrollé y desplegué el smart contract de control de acceso en BSC (Hardhat, Remix IDE) usado para autenticación basada en wallet verificada on-chain.",
           "Implementé cifrado con AWS KMS, almacenamiento en S3, edición/preview de documentos con OnlyOffice y eventos en tiempo real con Socket.io; un servicio NestJS maneja admin/chat/auth.",
-          "Diseñé y agregué nuevas pantallas y funcionalidades al frontend en Next.js/React.",
+          "Colaboré en el frontend en Next.js/React, agregando pantallas y funcionalidades.",
           "Corre en AWS EC2 detrás de Nginx.",
           "Sometí la plataforma a una auditoría de seguridad (ethical hacking) de DragonJar S.A.S.: de 19 vulnerabilidades identificadas (ninguna crítica), resolví 18.",
         ],

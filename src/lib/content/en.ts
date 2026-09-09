@@ -76,7 +76,7 @@ export const experience = [
           "Designed and developed the entire Notrack backend (Fastify + MongoDB), including a file management system with version history.",
           "Designed, developed, and deployed the Solidity access-control smart contract (Hardhat, Remix IDE) used for on-chain wallet-based authentication.",
           "Implemented AWS KMS encryption, S3 file storage, OnlyOffice document editing/preview, and Socket.io real-time events; a NestJS service handles admin/chat/auth.",
-          "Designed and added new screens and features to the Next.js/React frontend.",
+          "Collaborated on the Next.js/React frontend, adding screens and features.",
           "Runs on AWS EC2 behind Nginx.",
           "Commissioned a DragonJar S.A.S. security audit (ethical hacking): of 19 vulnerabilities found (none critical), I resolved 18.",
         ],
