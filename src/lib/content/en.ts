@@ -60,11 +60,11 @@ export const experience = [
       {
         name: "Domoblock",
         description: [
-          "Designed and developed the entire Domoblock backend: NestJS microservices (auth, KYC, payments, investments, blockchain, notifications) in a hexagonal/DDD architecture communicating over RabbitMQ, within an Nx monorepo.",
+          "Designed and developed the entire Domoblock backend: NestJS microservices (auth, KYC, payments, investments, blockchain, notifications) in a hexagonal/DDD architecture communicating over RabbitMQ, within an Nx monorepo. Deployed on Google Cloud Run with PostgreSQL and Firebase.",
           "Automated the end-to-end purchase flow: integrated the MangoPay eWallet payment gateway and automated withdrawals, token purchases, and top-ups.",
           "Led a development team of 4 building the microservices.",
-          "Implemented on-chain token minting on Polygon, and designed and added new screens and features to the Angular frontend.",
-          "Deployed on Google Cloud Run with PostgreSQL and Firebase.",
+          "Implemented on-chain token minting on Polygon.",
+          "Designed and added new screens and features to the Angular frontend.",
           "The platform has accumulated over €58 million invested by users across its projects to date, several already distributing dividends.",
         ],
         stack: ["Angular", "NestJS", "RabbitMQ", "PostgreSQL", "Firebase", "MangoPay", "Polygon", "Google Cloud Run", "Docker"],
